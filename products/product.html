@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Aayushya/css/product.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayushya | Product</title>
+    <!-- link for Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link for Stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FOr Shadow  -->
+
+</head>
+<body>
+    <div class="header">
+        <!-- Creating a Div class Container which stores all type of page stuffs  -->
+        <div class="container">
+            <!-- Creating a Navbar class for navigation bar  -->
+            <div class="navbar">
+                <!-- Creating a class for logo itself -->
+                <div class="logo"> 
+                    <!-- adding the image of logo  -->
+                    <a href="/Aayushya/index.html"><img src="/Aayushya/images/logo.png" alt="logo"></a> 
+                </div>
+                <!-- creating a nav tag which will include the navigation bar, so that we can add the navigation links in the bar -->
+                <nav>
+                    <!-- creating a Unlisted list to add the several categories in the navigation menu  -->
+                    <ul id="menuitems"> 
+                        <!-- adding the categories in the navigation bar in list form -->
+                        <li> <a href="/Aayushya/home.html">Home</a> </li>
+                        <li> <a href="/Aayushya/categories.html">Categories</a> </li>
+                        <li> <a href="/Aayushya/footers/aboutus.html">About</a> </li>
+                        <li> <a href="/Aayushya/contact_us.html">Contact</a> </li>
+                        <li> <a href="/Aayushya/myaccount.html">My Account</a> </li>
+                    </ul>
+                </nav>
+                <!-- CART ICON  -->
+                <a href="cart.html"><img src="/Aayushya/images/cart.png" alt="cart" id="cartlogo"></a>
+
+                <!-- NAV MENU ICON  -->
+                <img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/000000/external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+
+<!-------------- Product Detail Page  ------------------->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    
+                    <!-- Catalogue Images  -->
+                    <img src="/Aayushya/images/category1.png" alt="product-image" width="100%" id="productImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="/Aayushya/images/category1.png" alt="product-image" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="/Aayushya/images/category1-2.jpg" alt="product-image" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="/Aayushya/images/category1-3.jpg" alt="product-image" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="/Aayushya/images/category1-4.jpg" alt="product-image" class="small-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details  -->
+                <div class="col-2">
+                    <p>Home / Product</p>
+                    <h1>The Tribe Concept - Kumkumadi Thailam</h1>                    
+                    <h3>&#8377;199</h3>
+                    <select>
+                        <option>30ml</option>
+                        <option>50ml</option>
+                        <option>100ml</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="#" class="btn" id="adc-btn">Add to Cart</a>
+
+                    <h3>Product Details <i class = "fa fa-indent"></i></h3>
+                    <br> 
+                    <p>Face Oil blend for a golden complexion. An ayurvedic recipe for Skin Brightening, Anti-aging, Healthy-Even-toned Radiant glowing skin. It's an excellent treatment for Brightening, anti-pigmentation and for a flawless even-toned complexion. It is as an Anti-aging skin repair oil penetrating into deeper layers of skin.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<!-- FEATURED PRODUCTS  -->
+<div class="small-container">
+        <h2 class ='title'>Products You Might Like</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/Aayushya/images/fcategories1.png" alt="">
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>    
+                    </div>
+                    <h4>Man Matters Nourish Hair Gummies</h4>
+                    <p id="price">&#8377;599</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/Aayushya/images/fcategories2.png" alt="">
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>    
+                    </div>
+                    <h4>Man Matters - Tostero Capsules</h4>
+                    <p id="price">&#8377;199</p>
+                </div>
+            
+                <div class="col-4">
+                    <img src="/Aayushya/images/fcategories3.png" alt="">
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>    
+                    </div>
+                    <h4>Oziva - protein & Herbs</h4>
+                    <p id="price">&#8377;459</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/Aayushya/images/fcategories4.png" alt="">
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>    
+                    </div>
+                    <h4>Just Herbs - Herbal lipsticks</h4>
+                    <p id="price">&#8377;499</p>
+                </div>  
+            </div>
+
+
+<!-- FOOTER -->
+<div class="services-tab">
+    <h1>Services We Provide</h1>
+    <div class="services">
+        <div id="payment-method">
+            <h2>Safe Multiple Payment Options</h2>
+        </div>
+        <div id="free-shipping">
+            <h2>Free Shipping</h2>
+            <p>On Orders Above &#8377;499</p>
+        </div>
+        <div id="india">
+            <h2>We souly Support "Made in India"</h2>
+        </div>
+        
+    </div>
+</div>
+
+<!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-1">
+                    <img src="/Aayushya/images/logo.png">
+                </div>
+
+                <div class="footer-2">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="/Aayushya/footers/aboutus.html"> About us</a></li>
+                        <li><a href="/Aayushya/footers/terms.html"> General Terms & Conditions</a></li>
+                        <li><a href="/Aayushya/footers/privacy.html"> Privacy Policy</a></li>
+                        <li><a href="#"> FAQ </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"> Twitter</a></li>
+                        <li><a href="#"> Facebook</a></li>
+                        <li><a href="#"> Instagram</a></li>
+                        <li><a href="#"> Youtube </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class= "copyright"> Copyright 2022 - Aayushya - Herbal online Store</p>
+        </div>
+    </div>
+
+<!-- Ignore the Below Code as it have no use right now because i haven't done the MEDIA QUERY codes, this will be removed or later it will be implemented  -->
+<!-- JS FOR MENU TOGGLE  -->
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+
+        else{
+            menuitems.style.maxHeight = "0px"; 
+        }
+    }
+
+</script>
+
+
+<!-- -------------------- JS For Product Gallery ---------------  -->
+
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function()
+    {
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function()
+    {
+        productImg.src = smallImg[3].src;
+    }
+
+</script>
+
+
+</body>
+</html>

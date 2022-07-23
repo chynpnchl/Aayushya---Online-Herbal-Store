@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Aayushya/css/registration.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayushya | Register/Login</title>
+    <!-- link for Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="header">
+        <!-- Creating a Div class Container which stores all type of page stuffs  -->
+        <div class="container">
+            <!-- Creating a Navbar class for navigation bar  -->
+            <div class="navbar">
+                <!-- Creating a class for logo itself -->
+                <div class="logo"> 
+                    <!-- adding the image of logo  -->
+                    <a href="/Aayushya/index.html"><img src="/Aayushya/images/logo.png" alt="logo"></a> 
+                </div>
+                <!-- creating a nav tag which will include the navigation bar, so that we can add the navigation links in the bar -->
+                <nav>
+                    <!-- creating a Unlisted list to add the several categories in the navigation menu  -->
+                    <ul id="menuitems"> 
+                        <!-- adding the categories in the navigation bar in list form -->
+                        <li> <a href="/Aayushya/index.html">Home</a> </li>
+                        <li> <a href="/Aayushya/categories.html">Categories</a> </li>
+                        <li> <a href="/Aayushya/footers/aboutus.html">About</a> </li>
+                        <li> <a href="/Aayushya/contact_us.html">Contact</a> </li>
+                        <li> <a href="/Aayushya/myaccount.html">My Account</a> </li>
+                    </ul>
+                </nav>
+                
+                <!-- CART ICON  -->
+                <a href="cart.html"><img src="images/cart.png" alt="cart" id="cartlogo"></a>
+
+                <!-- NAV MENU ICON  -->
+                <img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/000000/external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+<!----------------------- Login/Registration Section ----------------->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="/Aayushya/images/Summer.png" alt="sale" width="100%" id="summer">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="class-btn">
+                        <span onclick="login()">Log-in</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+
+                    <!-- -------------- Log-in Form -------------  -->
+                    <form id="login-form">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button type="submit" class="btn">Log-in</button>
+                        <a href="#" id="forget">Forgot Password?</a>
+                    </form>
+
+
+                    <!-- ---------- Registration Form ---------  -->
+                    <form id="reg-form">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+  
+
+<!-- ---------------Service Tab---------------- -->
+<div class="services-tab">
+    <h1>Services We Provide</h1>
+    <div class="services">
+        <div id="payment-method">
+            <h2>Safe Multiple Payment Options</h2>
+        </div>
+        <div id="free-shipping">
+            <h2>Free Shipping</h2>
+            <p>On Orders Above &#8377;499</p>
+        </div>
+        <div id="india">
+            <h2>We souly Support "Made in India"</h2>
+        </div>
+        
+    </div>
+</div>
+
+<!-- -----------Footer--------------  -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-1">
+                <img src="images/logo.png">
+            </div>
+
+            <div class="footer-2">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="/Aayushya/footers/aboutus.html"> About us</a></li>
+                    <li><a href="/Aayushya/footers/terms.html"> General Terms & Conditions</a></li>
+                    <li><a href="/Aayushya/footers/privacy.html"> Privacy Policy</a></li>
+                    <li><a href="#"> FAQ </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"> Twitter</a></li>
+                    <li><a href="#"> Facebook</a></li>
+                    <li><a href="#"> Instagram</a></li>
+                    <li><a href="#"> Youtube </a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class= "copyright"> Copyright 2022 - Aayushya - Herbal online Store</p>
+    </div>
+</div>
+
+
+
+<!-- -------------------- JS for toggle form ---------------------- -->
+
+<!-- CODE IS FOR THE TRANSITION THAT IS HAPPENING IN THE BAR BENEATH LOG IN AND REGISTRATION SECTION WHICH TRANSITIONS ON CLICKING IT ON X-AXIS  -->
+<script>
+
+    var loginform = document.getElementById("login-form");
+    var regform = document.getElementById("reg-form");
+    var indicator = document.getElementById("indicator");
+
+    function  register(){
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(171px)";
+    }
+
+    function  login(){
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(37px)";
+    }
+
+// <!-- Ignore the Below Code as it have no use right now because i haven't done the MEDIA QUERY codes, this will be removed or later it will be implemented  -->
+// <!-- JS For MEnu Toggle -->
+
+var menuitems = document.getElementById("menuitems");
+
+menuitems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(menuitems.style.maxHeight == "0px")
+    {
+        menuitems.style.maxHeight = "200px";
+    }
+
+    else{
+        menuitems.style.maxHeight = "0px"; 
+    }
+}
+
+</script>
+
+
+     
+ </body>
+</html>

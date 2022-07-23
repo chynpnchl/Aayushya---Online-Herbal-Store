@@ -1,0 +1,568 @@
+/* These are some default value which we are setting for each the website, This is called as reseting a webpage  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #ebebeb; */
+    background-image: url("images/background.jpg")
+}
+
+/* giving the size and other aspects to our logo */
+.logo img{
+    width:240px;
+}
+
+ .navbar{
+     display: flex;
+     align-items: center;
+     padding: 20px;
+ }
+ 
+/* Specific For the content  */
+ nav{
+     flex:1;
+     text-align: right;
+     font-size: 21px;
+ }
+
+ nav ul{
+     display: inline-block;
+     list-style-type: none;
+ }
+
+ nav ul li{
+     display: inline-block;
+     margin-right: 20px;
+ }
+
+ a{
+     text-decoration: none;
+     color: black;
+ }
+
+nav a:hover{
+    text-decoration: underline;
+    color:#ed7d31;
+    
+}
+
+ 
+.container{
+    max-width: 1300px;
+    margin: auto;
+    /* Giving padding from both side so that navbar content comes in center  */
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+    
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 25px;
+ }
+ 
+.col-2{
+    flex-basis: 50% ;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 900px;
+    padding: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+    
+.col-2 h1{
+    font-size: 53px;
+    line-height: 57px;
+    margin: 11px 0;
+}
+    
+p{
+    color: #696969;
+    padding: 3px 5px;
+    font-size: 18px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #ed7d31;
+    color: white;
+    padding: 8px 14px;
+    margin: 10px 1px;
+    border-radius: 23px;
+    font-size: 18px;
+    transition: background 0.9s;
+ }
+
+ .btn:hover{
+     background: #b7b7b7;
+     color:#232323;
+ }
+
+ .header{
+    /* background-color: #ebebeb; */
+    background-image: url(images/background.jpg);
+ }
+
+ .header .row{
+    margin-top: 50px;
+
+ }
+
+ #cartlogo{
+     width: 90px;
+ }
+
+.categories{
+    margin: 70px 0;
+}
+
+/* For the products we added in the home page   */
+.col-3{
+    flex-basis: 33%;
+    min-width: 250px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    transition: transform 0.5s;
+    /* transition: filter 1.0s; */
+}
+
+.col-3:hover{
+    transform: translateY(-5px);
+}
+
+/* Shadow Hover Effect for Shadow  */
+.col-3 img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0px 2px 4px rgb(51, 51, 51));
+}
+
+/* For the products images we added in the home page   */
+.col-3 img{
+    width: 85%;
+    transition: filter 0.7s;
+}
+
+
+/* For Product Categories */
+.small-container{
+    max-width: 1205px;
+    margin: auto;
+}
+
+/* For The Featured products */
+.col-4{
+    flex-basis: 21%;
+    padding: 10px;
+    min-width: 200px;
+    margin-top: 8px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+    transition: filter 0.7s;
+}
+
+.col-4 h4{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Creating The Hover Effects for Products  */
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.col-4 img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0px 2px 4px rgb(51, 51, 51));
+}
+
+#price{
+    font-size: 17px;
+    margin-left: -4px;
+    margin-top: -3px;
+}
+
+/* For Checked Stars Color  */
+.checked {
+    color: #ed7d31;
+  }
+
+  /* For Titles of Each Catgories */
+  .title{
+      text-align: center;
+      margin: 40px auto 65px;
+      position: relative;
+      line-height: 60px ;
+  }
+
+  /* The Orage Line after the Title  */
+  .title::after{
+    content: '';
+    background: #ed7d31;
+    width: 80px;
+    height: 6px;
+    border-radius: 9px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+/* SERVICES WE PROVIDE SECTION  */
+
+  .services-tab{
+    border: 2px solid black;
+    margin-top: 90px;
+    padding: 18px;
+    width: 100%;
+  }
+
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+  }
+
+  .services-tab h1{
+      display: block;
+      text-align: center;
+      margin: 20px;
+  }
+
+#payment-method{
+    text-align: center;
+    border: 2px solid black;
+    padding: 22px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#payment-method:hover{
+    background: #ed7d31;
+    color: white;
+    cursor: pointer;
+}
+
+#free-shipping{
+    text-align: center;
+    border: 2px solid black;
+    padding: 25px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#free-shipping:hover{
+    background-color: #ed7d31;
+    color: white;
+    cursor: pointer;
+
+}
+
+#india{
+    text-align: center;
+    border: 2px solid black;
+    padding: 22px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#india:hover{
+    background-color: #ed7d31;
+    color: white;
+    cursor: pointer;
+}
+
+.brands{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.brands img{
+    max-width: 175px;
+    margin: 4px 20px;
+}
+
+.brands h2{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+
+/* FOOTER  */
+
+.footer{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    padding: 11px 0 20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer img{
+    width: 250px;
+}
+
+.footer ul{
+    list-style-type: none; 
+}
+
+.footer a:hover{
+    color: #ed7d31;
+    text-decoration: underline;
+}
+
+.footer h3{
+    margin-bottom: 3px;
+    text-decoration: underline;
+    
+}
+
+.footer-1, .footer-2, .footer-3, .footer-4{
+    min-width: 250px;
+}
+
+.footer-1{
+    flex-basis: 100%;
+   
+}
+
+
+.footer-2{
+    margin-top: 20px;
+    flex:1;
+     
+}
+
+.footer-3{
+    margin-top: 20px;
+    flex:1;
+}
+
+.footer hr{
+    border: 0px solid #ed7d31 ;
+    background: #ed7d31;
+    height: 1px;
+    margin: 18px 0;
+}
+
+.copyright{
+    font-size: 15px;
+    line-height: 0;
+}
+
+.menu-icon{
+    width: 32px;
+    margin-left: 12px;
+    display: none;
+}
+
+
+/* -------------- SINGLE PRODUCT DETAILS ---------  */
+
+.single-product{
+    margin-top: 30px;
+
+}
+
+#productImg{
+    padding: 9px;
+    padding-right: 9px;
+    filter: none;
+}
+
+.col-2 h1{
+    font-size: 49px;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h3{
+    margin-left: 4px;
+    margin-top: 17px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product select:focus{
+    border: 1px solid #ed7d31;
+    outline: none;
+}
+
+.single-product input{
+    width: 120px;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input:focus{
+    border: 1px solid #ed7d31;
+    outline: none;
+}
+
+.small-container .col-2 img{
+    filter: none;
+}
+
+.single-product .fa{
+    color: #ed7d31;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+.small-img-row img{
+    width: 119%;
+    padding: 21px;
+    margin: -13px;
+    margin-top: -20px;
+}
+
+#adc-btn{
+    margin-left: -3px;
+    margin-top: 20px;
+}
+
+
+/* -------------------------CART ITEMS------------------- */
+
+.cart-page{
+     margin: 20x auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    width: 45%;
+    color: #fff;
+    padding: 9px;
+    background: #ed7d31;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 12px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 3px;
+}
+
+td a{
+    color: #ed7d31;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ed7d31;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------Media Queries for Menu icon-------  */
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 95px;
+        left: -35px;
+        background: #fff;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 16px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+
+}

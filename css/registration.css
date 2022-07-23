@@ -1,0 +1,411 @@
+/* These are some default value which we are setting for each the website, This is called as reseting a webpage  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #ebebeb; */
+    background-image: url("images/background.jpg");
+}
+
+/* giving the size and other aspects to our logo */
+.logo img{
+    width:240px;
+}
+
+ .navbar{
+     display: flex;
+     align-items: center;
+     padding: 20px;
+ }
+ 
+/* Specific For the content  */
+ nav{
+     flex:1;
+     text-align: right;
+     font-size: 21px;
+ }
+
+ nav ul{
+     display: inline-block;
+     list-style-type: none;
+ }
+
+ nav ul li{
+     display: inline-block;
+     margin-right: 20px;
+ }
+
+ a{
+     text-decoration: none;
+     color: black;
+ }
+
+nav a:hover{
+    text-decoration: underline;
+    color:#ed7d31;
+}
+
+ 
+.container{
+    /* max-width: 1300px; */
+    margin: auto;
+    /* Giving padding from both side so that navbar content comes in center  */
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+    
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 25px;
+ }
+ 
+.col-2{
+    flex-basis: 50% ;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 900px;
+    padding: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+    
+.col-2 h1{
+    font-size: 53px;
+    line-height: 57px;
+    margin: 11px 0;
+}
+    
+p{
+    color: #696969;
+    padding: 3px 5px;
+    font-size: 18px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #ed7d31;
+    color: white;
+    padding: 8px 14px;
+    margin: 10px 1px;
+    border-radius: 23px;
+    font-size: 18px;
+    transition: background 0.9s;
+ }
+
+ .btn:hover{
+     background: #232323;
+     color: #fff;
+ }
+
+ .header{
+    /* background-color: #ebebeb; */
+    background-image: url(images/background.jpg);
+ }
+
+ .header .row{
+    margin-top: 50px;
+
+ }
+
+ #cartlogo{
+     width: 90px;
+ }
+
+.categories{
+    margin: 70px 0;
+}
+
+
+/********* SERVICES WE PROVIDE SECTION  ***********/
+
+  .services-tab{
+    border: 2px solid black;
+    margin-top: 90px;
+    padding: 18px;
+    width: 100%;
+  }
+
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+  }
+
+  .services-tab h1{
+      display: block;
+      text-align: center;
+      margin: 20px;
+  }
+
+#payment-method{
+    text-align: center;
+    border: 2px solid black;
+    padding: 22px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#payment-method:hover{
+    background: #ed7d31;
+    color: white;
+    cursor: pointer;
+}
+
+#free-shipping{
+    text-align: center;
+    border: 2px solid black;
+    padding: 25px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#free-shipping:hover{
+    background-color: #ed7d31;
+    color: white;
+    cursor: pointer;
+
+}
+
+#india{
+    text-align: center;
+    border: 2px solid black;
+    padding: 22px;
+    flex-basis: 30%;
+    transition: all 0.5s;
+}
+
+#india:hover{
+    background-color: #ed7d31;
+    color: white;
+    cursor: pointer;
+}
+
+.brands{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.brands img{
+    max-width: 175px;
+    margin: 4px 20px;
+}
+
+.brands h2{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+
+/***************** FOOTER  **************/
+
+.footer{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    padding: 11px 0 20px;
+    width: 100%;
+}
+
+.footer img{
+    width: 250px;
+}
+
+.footer ul{
+    list-style-type: none; 
+}
+
+.footer a:hover{
+    color: #ed7d31;
+    text-decoration: underline;
+}
+
+.footer h3{
+    margin-bottom: 3px;
+    text-decoration: underline;
+    
+}
+
+.footer-1, .footer-2, .footer-3, .footer-4{
+    min-width: 250px;
+}
+
+.footer-1{
+    flex-basis: 100%;
+   
+}
+
+
+.footer-2{
+    margin-top: 20px;
+    flex:1;
+     
+}
+
+.footer-3{
+    margin-top: 20px;
+    flex:1;
+}
+
+.footer hr{
+    border: 0px solid #ed7d31 ;
+    background: #ed7d31;
+    height: 1px;
+    margin: 18px 0;
+}
+
+.copyright{
+    font-size: 15px;
+    line-height: 0;
+}
+
+.menu-icon{
+    width: 32px;
+    margin-left: 12px;
+    display: none;
+}
+
+/* --------------LOG IN AND REGISTRATION SECTION-------------- */
+
+.account-page{
+    padding: 25px 0;
+}
+
+#summer{
+    width: 122%;
+    margin: 0px -15px;
+    filter: none;       
+}
+
+.form-container{
+    width: 315px;
+    height: 342px;
+    background: white;
+    border: 1px solid #222;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 35px;    
+    color: #ed7d31;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 80px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid grey;
+}
+
+form input:focus{
+    border: 1px solid #ed7d31;
+    outline: none;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+#login-form{
+    left: -300px;
+}
+
+#reg-form{
+    left: 0px ;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ed7d31;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(174px);
+    transition: transform 1s;
+}
+
+#forget:hover{
+    color: #ed7d31;
+}
+
+
+/* ------Media Queries for Menu icon-------  */
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 95px;
+        left: -35px;
+        background: #fff;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 16px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    #summer{
+        width: 189%;
+        margin: 0px -143px;
+    }
+
+    .services-tab{
+        display: none;
+    }
+
+
+}
